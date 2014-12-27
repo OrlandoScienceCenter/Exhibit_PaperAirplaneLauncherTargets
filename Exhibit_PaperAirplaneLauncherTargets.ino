@@ -27,7 +27,7 @@ void loop() {
   //Serial.println(millis()); 
   
   if (detectorFiring == 1){    
-    delay(20);
+    delay(10);
     detectorFiring = !digitalRead(5);  
 
     if (detectorFiring == 1){    
