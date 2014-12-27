@@ -32,6 +32,8 @@ void loop() {
     colorWipe(strip.Color(0, 0, 0), 10);
 
     detectorFiring = 0;  
+    
+    delay(500);
   }  
 }
 
