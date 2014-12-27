@@ -33,7 +33,7 @@ void loop() {
 
     detectorFiring = 0;  
     
-    delay(500);
+    delay(100);
   }  
 }
 
