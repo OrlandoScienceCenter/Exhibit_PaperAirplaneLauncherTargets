@@ -27,13 +27,15 @@ void loop() {
   //Serial.println(millis()); 
   
   if (detectorFiring == 1){    
-    rainbowCycle(5);
-    
-    colorWipe(strip.Color(0, 0, 0), 10);
+    delay(10);
+    detectorFiring = !digitalRead(5);  
 
-    detectorFiring = 0;  
-    
-    delay(500);
+    if (detectorFiring == 1){    
+      rainbowCycle(5);
+      colorWipe(strip.Color(0, 0, 0), 10);
+      detectorFiring = 0;  
+      delay(100);
+    }
   }  
 }
 
